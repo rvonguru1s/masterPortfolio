@@ -1,42 +1,40 @@
 import React from "react";
-import "./CompetitiveSites.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Icon } from "@iconify/react";
 
 class CompetitiveSites extends React.Component {
   render() {
     return (
-      <div className="competitive-sites-main-div">
-        <ul className="dev-icons">
-          {this.props.logos.map((logo) => {
-            return (
-              <OverlayTrigger
-                key={logo.siteName}
-                placement={"top"}
-                style={{ marginBottom: "5px" }}
-                overlay={
-                  <Tooltip id={`tooltip-top`}>
-                    <strong>{logo.siteName}</strong>
-                  </Tooltip>
-                }
-              >
-                <li className="competitive-sites-inline" name={logo.siteName}>
-                  <a
-                    href={logo.profileLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span
-                      className="iconify"
-                      data-icon={logo.iconifyClassname}
-                      style={logo.style}
-                      data-inline="false"
-                    ></span>
-                  </a>
-                </li>
-              </OverlayTrigger>
-            );
-          })}
-        </ul>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "40px",
+          flexWrap: "wrap",
+          marginTop: "30px",
+        }}
+      >
+        {this.props.logos?.map((logo) => (
+          <a
+            key={logo.siteName}
+            href={logo.profileLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              textDecoration: "none",
+            }}
+          >
+            <Icon
+              icon={logo.iconifyClassname}
+              style={{ fontSize: "30px", color: logo.style.color }}
+            />
+            <span style={{ marginTop: "8px", color: "#333" }}>
+              {logo.siteName}
+            </span>
+          </a>
+        ))}
       </div>
     );
   }

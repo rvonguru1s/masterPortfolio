@@ -2,10 +2,20 @@ import React, { Component } from "react";
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-reveal";
 
+// Import logos statically
+import semoLogo from "../../assets/images/semo_logo.png";
+import sietLogo from "../../assets/images/SIET.png";
+
+// Map logo filenames to imported images
+const imageMap = {
+  "semo_logo.png": semoLogo,
+  "SIET.png": sietLogo,
+};
+
 class DegreeCard extends Component {
   render() {
-    const degree = this.props.degree;
-    const theme = this.props.theme;
+    const { degree, theme } = this.props;
+
     return (
       <div className="degree-card">
         {degree.logo_path && (
@@ -13,16 +23,20 @@ class DegreeCard extends Component {
             <div className="card-img">
               <img
                 style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  transform: "scale(0.9)",
+                  width: "160px", // Oval shape width
+                  height: "110px", // Oval shape height
+                  borderRadius: "50%", // Make it oval
+                  objectFit: "cover", // Prevent distortion
+                  transform: "scale(1.2)",
+                  border: "2px solid #ccc", // Optional border
                 }}
-                src={require(`../../assets/images/${degree.logo_path}`)}
+                src={imageMap[degree.logo_path]}
                 alt={degree.alt_name}
               />
             </div>
           </Flip>
         )}
+
         <Fade right duration={2000} distance="40px">
           <div
             className="card-body"
@@ -46,14 +60,18 @@ class DegreeCard extends Component {
                 </h3>
               </div>
             </div>
+
             <div className="body-content">
-              {degree.descriptions.map((sentence) => {
-                return (
-                  <p className="content-list" style={{ color: theme.text }}>
-                    {sentence}
-                  </p>
-                );
-              })}
+              {degree.descriptions.map((sentence, index) => (
+                <p
+                  key={index}
+                  className="content-list"
+                  style={{ color: theme.text }}
+                >
+                  {sentence}
+                </p>
+              ))}
+
               {degree.website_link && (
                 <a
                   href={degree.website_link}

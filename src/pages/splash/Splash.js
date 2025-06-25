@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./Splash.css";
 import { Redirect } from "react-router-dom";
-import LoaderLogo from "../../components/Loader/LoaderLogo.js";
+import LoaderLogo from "../../components/Loader/LoaderLogo";
 
 function AnimatedSplash(props) {
   return (
     <div className="logo_wrapper">
       <div className="screen" style={{ backgroundColor: props.theme.splashBg }}>
-        <LoaderLogo id="logo" theme={props.theme} />
+        <LoaderLogo theme={props.theme} />
       </div>
     </div>
   );
@@ -22,10 +22,10 @@ class Splash extends Component {
   }
 
   componentDidMount() {
-    this.id = setTimeout(() => this.setState({ redirect: true }), 5500);
+    this.id = setTimeout(() => this.setState({ redirect: true }), 1200);
   }
 
-  componentWillMount() {
+  componentWillUnmount() {
     clearTimeout(this.id);
   }
 

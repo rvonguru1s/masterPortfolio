@@ -17,9 +17,12 @@
 }
 
 .logo_img {
-  margin: 3px;
-  width: auto;
-  height: 100px;
+  width: 100%; /* Use percentage for responsive scaling */
+  max-width: 200px; /* Optional: prevent it from growing too large */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 10px auto; /* Center horizontally */
+  object-fit: contain;
 }
 
 .cert-body {

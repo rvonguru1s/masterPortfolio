@@ -1,23 +1,33 @@
-.dev-icons {
-  padding-left: 0;
-  list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+.competitive-sites-inline-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto; /* Enables scroll if too wide */
+  white-space: nowrap;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox: hide scrollbar */
+}
+
+.competitive-sites-inline-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari: hide scrollbar */
+}
+
+.competitive-sites-inline-container img {
+  height: 50px;
+  width: auto;
+  flex-shrink: 0; /* Prevent shrinking */
+  object-fit: contain;
+}
+.dev-icons .iconify {
+  font-size: 60px !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: inline-block;
 }
 
 .competitive-sites-inline {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  font-family: "Google Sans Regular";
-}
-
-.competitive-sites-inline > i {
-  color: #868e96;
-}
-
-.competitive-sites-inline > i:hover {
-  color: #645beb;
+  margin: 0 10px;
 }

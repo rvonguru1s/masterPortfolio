@@ -1,18 +1,35 @@
+.education-top-right-wrapper {
+  position: absolute;
+  top: 350px; /* adjust vertically as needed */
+  right: 250px; /* adjust horizontally as needed */
+  text-align: right;
+  z-index: 10;
+}
+
 .educations-header {
-  font-size: 40px;
-  line-height: 1.1;
-  font-family: "Google Sans Regular";
-  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #001c55;
+  margin: 0;
 }
 
-@media (max-width: 1380px) {
-  .educations-header {
-    font-size: 35px;
-  }
+.heading-sub-text {
+  font-size: 18px;
+  color: #001c55;
+  margin: 10px 0 30px;
 }
 
-@media (max-width: 768px) {
-  .educations-header {
-    font-size: 30px;
-  }
+.competitive-sites-below-heading {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.degrees-sub-header {
+  font-size: 50px;
+  font-weight: bold;
+  color: #001c55;
+  text-align: center; /* 👈 align left */
+  margin-left: 150px; /* 👈 push it slightly right */
+  margin-top: 40px;
 }

@@ -1,85 +1,68 @@
-import React, { useState, useEffect } from "react";
-import ApolloClient from "apollo-boost";
-import { gql } from "apollo-boost";
-import "./Project.css";
-import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
+import React, { Component } from "react";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import ProjectCard from "../../components/projectCard/ProjectCard"; // ✅ Correct import
 import Button from "../../components/button/Button";
-import { openSource } from "../../portfolio";
-import { greeting } from "../../portfolio.js";
+import TopButton from "../../components/topButton/TopButton";
+import { Fade } from "react-reveal";
+import { greeting, projectsHeader, projects } from "../../portfolio.js";
+import "./Projects.css";
+import ProjectsImg from "./ProjectsImg";
 
-export default function Projects() {
-  const [repo, setrepo] = useState([]);
+class Projects extends Component {
+  render() {
+    const { theme } = this.props;
 
-  useEffect(() => {
-    getRepoData();
-  }, []);
+    return (
+      <div className="projects-main">
+        <Header theme={theme} />
 
-  function getRepoData() {
-    const client = new ApolloClient({
-      uri: "https://api.github.com/graphql",
-      request: (operation) => {
-        operation.setContext({
-          headers: {
-            authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
-          },
-        });
-      },
-    });
+        {/* Project Section Heading */}
+        <div className="basic-projects">
+          <Fade bottom duration={2000} distance="40px">
+            <div className="projects-heading-div">
+              <div className="projects-heading-img-div">
+                <ProjectsImg theme={theme} />
+              </div>
+              <div className="projects-heading-text-div">
+                <h1
+                  className="projects-heading-text"
+                  style={{ color: theme.text }}
+                >
+                  {projectsHeader.title}
+                </h1>
+                <p
+                  className="projects-header-detail-text subTitle"
+                  style={{ color: theme.secondaryText }}
+                >
+                  {projectsHeader.description}
+                </p>
+              </div>
+            </div>
+          </Fade>
+        </div>
 
-    client
-      .query({
-        query: gql`
-          {
-            repositoryOwner(login: "${openSource.githubUserName}") {
-              ... on User {
-                pinnedRepositories(first: 6) {
-                  edges {
-                    node {
-                      nameWithOwner
-                      description
-                      forkCount
-                      stargazers {
-                        totalCount
-                      }
-                      url
-                      id
-                      diskUsage
-                      primaryLanguage {
-                        name
-                        color
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        `,
-      })
-      .then((result) => {
-        setrepoFunction(result.data.repositoryOwner.pinnedRepositories.edges);
-        console.log(result);
-      });
-  }
+        {/* Project Cards */}
+        <div className="repo-cards-div-main">
+          {projects.data.map((project, index) => (
+            <ProjectCard project={project} theme={theme} key={index} />
+          ))}
+        </div>
 
-  function setrepoFunction(array) {
-    setrepo(array);
-  }
+        {/* View More Projects Button */}
+        <Button
+          text="More Projects"
+          className="project-button"
+          href={greeting.githubProfile}
+          newTab={true}
+          theme={theme}
+        />
 
-  return (
-    <div className="main" id="opensource">
-      <h1 className="project-title">Open Source Projects</h1>
-      <div className="repo-cards-div-main">
-        {repo.map((v, i) => {
-          return <GithubRepoCard repo={v} key={v.node.id} />;
-        })}
+        <Footer theme={theme} onToggle={this.props.onToggle} />
+        <TopButton theme={theme} />
       </div>
-      <Button
-        text={"More Projects"}
-        className="project-button"
-        href={greeting.githubProfile}
-        newTab={true}
-      />
-    </div>
-  );
+    );
+  }
 }
+
+export default Projects;

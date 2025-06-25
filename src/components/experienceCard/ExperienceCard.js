@@ -25,7 +25,7 @@ class ExperienceCard extends Component {
         <div className="experience-card-stepper">
           <div
             style={{
-              width: 20,
+              width: 40,
               height: 20,
               backgroundColor: `${theme.headerColor}`,
               borderRadius: 50,
