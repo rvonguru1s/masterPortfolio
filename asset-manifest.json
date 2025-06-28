@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/masterPortfolio/static/css/main.03a10d0d.chunk.css",
-    "main.js": "/masterPortfolio/static/js/main.59bad21e.chunk.js",
-    "main.js.map": "/masterPortfolio/static/js/main.59bad21e.chunk.js.map",
+    "main.css": "/masterPortfolio/static/css/main.ff6e5679.chunk.css",
+    "main.js": "/masterPortfolio/static/js/main.bfede23e.chunk.js",
+    "main.js.map": "/masterPortfolio/static/js/main.bfede23e.chunk.js.map",
     "runtime-main.js": "/masterPortfolio/static/js/runtime-main.eb888f65.js",
     "runtime-main.js.map": "/masterPortfolio/static/js/runtime-main.eb888f65.js.map",
-    "static/js/2.8a03a672.chunk.js": "/masterPortfolio/static/js/2.8a03a672.chunk.js",
-    "static/js/2.8a03a672.chunk.js.map": "/masterPortfolio/static/js/2.8a03a672.chunk.js.map",
+    "static/js/2.9f2a5c9b.chunk.js": "/masterPortfolio/static/js/2.9f2a5c9b.chunk.js",
+    "static/js/2.9f2a5c9b.chunk.js.map": "/masterPortfolio/static/js/2.9f2a5c9b.chunk.js.map",
     "index.html": "/masterPortfolio/index.html",
-    "precache-manifest.1b859247d65c33e963e7caeaa49db14e.js": "/masterPortfolio/precache-manifest.1b859247d65c33e963e7caeaa49db14e.js",
+    "precache-manifest.e76d467e62e4c6203e8026fe0972770e.js": "/masterPortfolio/precache-manifest.e76d467e62e4c6203e8026fe0972770e.js",
     "service-worker.js": "/masterPortfolio/service-worker.js",
-    "static/css/main.03a10d0d.chunk.css.map": "/masterPortfolio/static/css/main.03a10d0d.chunk.css.map",
-    "static/media/index.css": "/masterPortfolio/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/css/main.ff6e5679.chunk.css.map": "/masterPortfolio/static/css/main.ff6e5679.chunk.css.map",
     "static/media/Rishika.jpg": "/masterPortfolio/static/media/Rishika.fda8d9f6.jpg",
     "static/media/ai_iot_healthcare.svg": "/masterPortfolio/static/media/ai_iot_healthcare.efa021e1.svg",
     "static/media/animated_ashutosh.png": "/masterPortfolio/static/media/animated_ashutosh.eaf02c2d.png",
@@ -26,7 +25,6 @@
     "static/media/dsc_logo.png": "/masterPortfolio/static/media/dsc_logo.63f707f2.png",
     "static/media/education.svg": "/masterPortfolio/static/media/education.3bab7a9d.svg",
     "static/media/experience1.svg": "/masterPortfolio/static/media/experience1.e8d64d2b.svg",
-    "static/media/all.css": "/masterPortfolio/static/media/fa-solid-900.8e4a6dcc.eot",
     "static/media/feelingProud.svg": "/masterPortfolio/static/media/feelingProud.2936ce95.svg",
     "static/media/fullstack.svg": "/masterPortfolio/static/media/fullstack.fce60807.svg",
     "static/media/gcp_logo.png": "/masterPortfolio/static/media/gcp_logo.0ee7e8c9.png",
@@ -58,8 +56,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eb888f65.js",
-    "static/js/2.8a03a672.chunk.js",
-    "static/css/main.03a10d0d.chunk.css",
-    "static/js/main.59bad21e.chunk.js"
+    "static/js/2.9f2a5c9b.chunk.js",
+    "static/css/main.ff6e5679.chunk.css",
+    "static/js/main.bfede23e.chunk.js"
   ]
 }
