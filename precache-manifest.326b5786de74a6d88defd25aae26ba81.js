@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed096452cb2775e4efc87ff689b65f7e",
+    "revision": "2d06f00f12a519219a9d20d05db88acd",
     "url": "/masterPortfolio/index.html"
   },
   {
-    "revision": "71ea2f4cf6ec6fb3d21e",
-    "url": "/masterPortfolio/static/css/main.f2b9e2df.chunk.css"
+    "revision": "36b01eb1179ef1581164",
+    "url": "/masterPortfolio/static/css/main.03a10d0d.chunk.css"
   },
   {
     "revision": "c90bcd903eb74bdc84a5",
     "url": "/masterPortfolio/static/js/2.f51d1b1d.chunk.js"
   },
   {
-    "revision": "71ea2f4cf6ec6fb3d21e",
-    "url": "/masterPortfolio/static/js/main.14835534.chunk.js"
+    "revision": "36b01eb1179ef1581164",
+    "url": "/masterPortfolio/static/js/main.a592a181.chunk.js"
   },
   {
     "revision": "64cdc71345ae0918beab",
@@ -220,8 +220,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/masterPortfolio/static/media/manOnTable.83ac24fb.svg"
   },
   {
-    "revision": "b62a0217cbbf7b8d4e585b4ab87ccc36",
-    "url": "/masterPortfolio/static/media/medical_rental_project.b62a0217.svg"
+    "revision": "7eee7651bdcac3ec3c65df0233b83462",
+    "url": "/masterPortfolio/static/media/medical_rental_project.7eee7651.svg"
   },
   {
     "revision": "069938a84edd6ebf383c318e9feb5d4c",
