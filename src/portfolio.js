@@ -21,7 +21,7 @@ const greeting = {
   title: "Rishika Vonguru",
   logo_name: "Rishika Vonguru",
   subTitle:
-    "A highly motivated individual focused on delivering end-to-end technology solutions that promote operational efficiency, system scalability, and long-term value.",
+    "Passionate Network Engineer and DevOps enthusiast skilled in routing, switching, firewalls, Linux, and cloud technologies like AWS. Focused on building secure, scalable infrastructure through automation, monitoring, and continuous improvement.",
   resumeLink:
     "https://drive.google.com/file/d/1Ry-8cO1Qt_EsxLzmgl87kdh1KUnIDGWy/view?usp=drive_link",
   portfolio_repository: "https://github.com/rvonguru1s/masterPortfolio",

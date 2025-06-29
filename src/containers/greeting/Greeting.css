@@ -4,6 +4,7 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -25,6 +26,7 @@
   flex: 1;
   margin-bottom: 30px;
 }
+
 .button-greeting-div {
   display: flex;
   margin-top: 20px;
@@ -55,34 +57,45 @@
   height: auto;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .greeting-text {
-    font-size: 50px;
-  }
-  .greeting-text-p {
-    font-size: 20px;
-  }
+/* 💠 New: Custom Logo with Agustina font */
+.greeting-custom-logo {
+  font-family: "Agustina", cursive;
+  font-size: 60px;
+  color: rgb(0, 28, 85);
+  margin-top: 20px;
+  margin-bottom: -30px;
+  text-align: left;
 }
+
+.agustina-name {
+  font-family: "Agustina", cursive;
+}
+
+/* Media Query */
+
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: space-around;
   }
+
   .greeting-text {
     font-size: 30px;
     margin-top: 0px;
     text-align: center;
   }
+
   .greeting-nickname {
     font-size: 25px;
     text-align: center;
   }
+
   .greeting-text-p {
     font-size: 16px;
     margin-right: 0px;
     line-height: normal;
     text-align: center;
   }
+
   .greeting-main {
     display: block;
   }
@@ -91,5 +104,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .greeting-custom-logo {
+    text-align: center;
+    font-size: 35px;
   }
 }

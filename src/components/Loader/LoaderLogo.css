@@ -1,17 +1,6 @@
 @font-face {
   font-family: "Agustina";
-  src: url("/fonts/Agustina-Regular.woff") format("woff");
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
-
-html,
-body,
-#root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #eaecf1;
+  src: url("/assets/fonts/Agustina.woff") format("woff");
 }
 
 .loader-container {
@@ -19,15 +8,17 @@ body,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   background-color: #030c2d;
 }
 
 .hex-logo {
-  margin-top: -130px;
-  width: 800px;
-  height: 700px;
+  width: 1000px;
+  height: 500px;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .myHexagon {
@@ -58,23 +49,24 @@ body,
   animation-delay: 0.1s;
 }
 
-/* Typewriter Name */
 .animated-name {
-  font-family: "Agustina", sans-serif;
-  font-size: 70px;
+  font-family: "Agustina", cursive !important;
+  font-size: 60px;
   color: white;
-  margin-top: -140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  margin-top: -80px;
 }
 
 .type-char {
   opacity: 0;
-  animation: typeIn 0.1s forwards;
+  animation: typeIn 0.4s ease-out forwards;
+  animation-fill-mode: forwards;
 }
 
+/* Animations */
 @keyframes typeIn {
   from {
     opacity: 0;
@@ -83,16 +75,6 @@ body,
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
   }
 }
 

@@ -1,65 +1,81 @@
-@font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
+/* Reset and Layout Foundation */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Bold";
-  src: local("Google Sans Bold"),
-    url("./assets/fonts/GoogleSans-Bold.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Bold Italic";
-  src: local("Google Sans Bold Italic"),
-    url("./assets/fonts/GoogleSans-BoldItalic.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Italic";
-  src: local("Google Sans Italic"),
-    url("./assets/fonts/GoogleSans-Italic.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Medium";
-  src: local("Google Sans Medium"),
-    url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Medium Italic";
-  src: local("Google Sans Medium Italic"),
-    url("./assets/fonts/GoogleSans-MediumItalic.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Regular";
-  src: local("Google Sans Regular"),
-    url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+
 html,
-body {
-  scroll-behavior: smooth;
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eaecf1;
+  font-family: "Google Sans Regular", "Montserrat", sans-serif;
   overflow-x: hidden;
 }
-body {
-  margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* Font Faces (from public/assets/fonts) */
+@font-face {
+  font-family: "Agustina";
+  src: url("/assets/fonts/Agustina.woff") format("woff");
 }
-/* Media Query */
-@media (max-width: 1380px) {
-  html,
-  body {
-    font-size: 16px;
-    line-height: normal;
-  }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans Bold";
+  src: url("/assets/fonts/GoogleSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans Bold Italic";
+  src: url("/assets/fonts/GoogleSans-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans Italic";
+  src: url("/assets/fonts/GoogleSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans Medium";
+  src: url("/assets/fonts/GoogleSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans Medium Italic";
+  src: url("/assets/fonts/GoogleSans-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans Regular";
+  src: url("/assets/fonts/GoogleSans-Regular.ttf") format("truetype");
+}
+
+/* Optional fallback */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+/* Typography Styling */
+h1,
+h2,
+h3 {
+  font-family: "Google Sans Bold", "Montserrat", sans-serif;
+}
+
+p,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Images and videos responsive */
+img,
+video {
+  max-width: 100%;
+  height: auto;
 }

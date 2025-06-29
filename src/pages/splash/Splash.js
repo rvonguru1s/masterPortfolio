@@ -6,7 +6,10 @@ import LoaderLogo from "../../components/Loader/LoaderLogo";
 function AnimatedSplash(props) {
   return (
     <div className="logo_wrapper">
-      <div className="screen" style={{ backgroundColor: props.theme.splashBg }}>
+      <div
+        className="screen"
+        style={{ backgroundColor: props.theme?.splashBg || "#030c2d" }}
+      >
         <LoaderLogo theme={props.theme} />
       </div>
     </div>
@@ -22,7 +25,8 @@ class Splash extends Component {
   }
 
   componentDidMount() {
-    this.id = setTimeout(() => this.setState({ redirect: true }), 1200);
+    // 15 characters * 0.15s delay + 0.4s animate + buffer
+    this.id = setTimeout(() => this.setState({ redirect: true }), 1900);
   }
 
   componentWillUnmount() {

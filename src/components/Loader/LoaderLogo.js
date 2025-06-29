@@ -42,7 +42,7 @@ class LogoLoader extends React.Component {
             <span
               key={index}
               className="type-char"
-              style={{ animationDelay: `${index * 0.05}s` }}
+              style={{ animationDelay: `${index * 0.08}s` }}
             >
               {char === " " ? "\u00A0" : char}
             </span>

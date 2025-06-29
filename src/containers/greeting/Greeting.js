@@ -16,13 +16,16 @@ export default function Greeting(props) {
             <h1 className="greeting-text" style={{ color: theme.text }}>
               {greeting.title}
             </h1>
+
             <p
               className="greeting-text-p subTitle"
               style={{ color: theme.secondaryText }}
             >
               {greeting.subTitle}
             </p>
+
             <SocialMedia theme={theme} />
+
             <div className="portfolio-repo-btn-div">
               <Button
                 text="⭐ Star Me On Github"
@@ -33,13 +36,13 @@ export default function Greeting(props) {
             </div>
           </div>
 
-          {/* Woman illustration with slightly bigger size */}
+          {/* Illustration */}
           <div className="greeting-image-div">
             <img
               src={`${process.env.PUBLIC_URL}/icons/WOMAN1.png`}
               alt="Rishika illustration"
               style={{
-                width: "820px", // Slightly bigger
+                width: "820px",
                 height: "auto",
                 borderRadius: "15px",
               }}

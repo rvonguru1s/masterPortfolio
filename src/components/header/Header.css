@@ -21,7 +21,10 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  /* color: black; */
+  font-size: 30px !important; /* Force override */
+  font-weight: 600;
+  color: rgb(0, 28, 85) !important; /* Keep your theme color */
+  font-family: "Google Sans Medium", "Montserrat", sans-serif;
   text-decoration: none;
 }
 
@@ -42,6 +45,7 @@
   font-family: "Agustina Regular";
   font-weight: bold;
   padding: 0 10px;
+  font-size: 32px;
   /* color: #55198b; */
 }
 

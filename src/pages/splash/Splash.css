@@ -1,42 +1,38 @@
 .logo_wrapper {
   height: 100vh;
   width: 100vw;
-  align-items: center;
-  justify-content: center;
-}
-
-.screen {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .screen {
-  /* background-color: #55198b; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #030c2d;
   overflow: hidden;
   border-radius: 100%;
   animation: grow 1.5s forwards;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Agustina", "Montserrat", sans-serif;
 }
 
 @keyframes grow {
   0% {
     transform: scale(0);
   }
-  10% {
-    transform: scale(1);
-    border-radius: 0%;
-    height: 100%;
-    width: 100%;
-  }
+  10%,
   90% {
     transform: scale(1);
     border-radius: 0%;
