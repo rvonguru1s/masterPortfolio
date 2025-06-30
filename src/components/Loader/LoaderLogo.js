@@ -37,20 +37,12 @@ class LogoLoader extends React.Component {
           </text>
         </svg>
 
-        <div
-          className="animated-name"
-          style={{
-            fontFamily: "Agustina, cursive",
-            fontSize: "64px",
-            marginTop: "-10px",
-            color: "white",
-          }}
-        >
+        <div className="animated-name">
           {name.split("").map((char, index) => (
             <span
               key={index}
               className="type-char"
-              style={{ animationDelay: `${index * 0.15}s` }}
+              style={{ animationDelay: `${index * 0.25}s` }}
             >
               {char === " " ? "\u00A0" : char}
             </span>
