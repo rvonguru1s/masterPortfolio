@@ -17,46 +17,45 @@ body,
   overflow-x: hidden;
 }
 
-/* Font Faces (from public/assets/fonts) */
 @font-face {
   font-family: "Agustina";
-  src: url("/assets/fonts/Agustina.woff") format("woff");
+  src: url("/masterPortfolio/assets/fonts/Agustina.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Google Sans Bold";
-  src: url("/assets/fonts/GoogleSans-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Google Sans Bold Italic";
-  src: url("/assets/fonts/GoogleSans-BoldItalic.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Google Sans Italic";
-  src: url("/assets/fonts/GoogleSans-Italic.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-Italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Google Sans Medium";
-  src: url("/assets/fonts/GoogleSans-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Google Sans Medium Italic";
-  src: url("/assets/fonts/GoogleSans-MediumItalic.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-MediumItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Google Sans Regular";
-  src: url("/assets/fonts/GoogleSans-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/GoogleSans-Regular.ttf") format("truetype");
 }
 
 /* Optional fallback */
