@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/masterPortfolio/static/css/main.927a5f88.chunk.css",
-    "main.js": "/masterPortfolio/static/js/main.9bc6c37e.chunk.js",
-    "main.js.map": "/masterPortfolio/static/js/main.9bc6c37e.chunk.js.map",
+    "main.css": "/masterPortfolio/static/css/main.03c69d01.chunk.css",
+    "main.js": "/masterPortfolio/static/js/main.e92e6bd4.chunk.js",
+    "main.js.map": "/masterPortfolio/static/js/main.e92e6bd4.chunk.js.map",
     "runtime-main.js": "/masterPortfolio/static/js/runtime-main.eb888f65.js",
     "runtime-main.js.map": "/masterPortfolio/static/js/runtime-main.eb888f65.js.map",
     "static/js/2.9f2a5c9b.chunk.js": "/masterPortfolio/static/js/2.9f2a5c9b.chunk.js",
     "static/js/2.9f2a5c9b.chunk.js.map": "/masterPortfolio/static/js/2.9f2a5c9b.chunk.js.map",
     "index.html": "/masterPortfolio/index.html",
-    "precache-manifest.b3efba4053a399d3619c94c7c2b675d9.js": "/masterPortfolio/precache-manifest.b3efba4053a399d3619c94c7c2b675d9.js",
+    "precache-manifest.548dd9a39d4b78f110a92f7c6de9fe5c.js": "/masterPortfolio/precache-manifest.548dd9a39d4b78f110a92f7c6de9fe5c.js",
     "service-worker.js": "/masterPortfolio/service-worker.js",
-    "static/css/main.927a5f88.chunk.css.map": "/masterPortfolio/static/css/main.927a5f88.chunk.css.map",
+    "static/css/main.03c69d01.chunk.css.map": "/masterPortfolio/static/css/main.03c69d01.chunk.css.map",
     "static/media/Rishika.jpg": "/masterPortfolio/static/media/Rishika.fda8d9f6.jpg",
     "static/media/ai_iot_healthcare.svg": "/masterPortfolio/static/media/ai_iot_healthcare.efa021e1.svg",
     "static/media/animated_ashutosh.png": "/masterPortfolio/static/media/animated_ashutosh.eaf02c2d.png",
@@ -57,7 +57,7 @@
   "entrypoints": [
     "static/js/runtime-main.eb888f65.js",
     "static/js/2.9f2a5c9b.chunk.js",
-    "static/css/main.927a5f88.chunk.css",
-    "static/js/main.9bc6c37e.chunk.js"
+    "static/css/main.03c69d01.chunk.css",
+    "static/js/main.e92e6bd4.chunk.js"
   ]
 }
