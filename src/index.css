@@ -21,6 +21,7 @@ body,
 @font-face {
   font-family: "Agustina";
   src: url("/assets/fonts/Agustina.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
